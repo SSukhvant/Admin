@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Teams Dashboard</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="app__sidebar">
+      <div class="app__sidebar-links">
+        <a href="#" alt="Dashboard" class="app__sidebar-logo"> <svg id="Group_14135" data-name="Group 14135"
+            xmlns="http://www.w3.org/2000/svg" width="50.075" height="60.712" viewBox="0 0 50.075 60.712">
+            <g id="Group_14133" data-name="Group 14133" transform="translate(0 0)">
+              <path id="Path_22977" data-name="Path 22977"
+                d="M209.011,430.715a4.818,4.818,0,0,1,.052-.832,5.4,5.4,0,0,0-.308-2.626c-.3-.813-.727-1.576-.947-2.417-.206-.79-.344-1.6-.5-2.4a9.222,9.222,0,0,1-.3-1.637.733.733,0,0,0-.844-.782c-.052.005-.112-.057-.165-.093-.336-.226-.721-.445-1.054-.7a2.646,2.646,0,0,1-1.089-2.7,14.476,14.476,0,0,1,1.964-4.395c.763-1.356,1.918-3.221,1.312-4.833a18.319,18.319,0,0,1-.642-2.275,14.7,14.7,0,0,1-.371-3.3c-.006-.624.008-1.248.03-1.871a17.052,17.052,0,0,1,3.521-9.128c.16-.227.341-.44.52-.652.213-.252.427-.5.654-.743.4-.419.8-.838,1.211-1.241a21.251,21.251,0,0,1,4.33-3.185,28.52,28.52,0,0,1,11.349-3.541,37.951,37.951,0,0,1,4.638-.08,22.2,22.2,0,0,1,11.106,3.567,22.862,22.862,0,0,1,7.4,7.5,22.066,22.066,0,0,1,2.35,5.45,21.743,21.743,0,0,1,.645,6.136,19.568,19.568,0,0,1-1,6.023c-1.311,3.858-3.632,7.249-5.078,11.043q-.067.176-.131.352a14.2,14.2,0,0,0-.237,8.984.532.532,0,0,1,.032.243c-.105.555-.973.611-1.384.795-1.015.453-1.964,1.049-2.939,1.581-1.149.627-2.307,1.241-3.478,1.826q-5.68,2.84-11.3,5.8a12.968,12.968,0,0,0-2.174,1.238c-.06.049-.127.146-.176.138a.289.289,0,0,1-.2-.157c-.083-.257-.266-.47-.372-.717-.4-.916-.869-1.8-1.278-2.707a17.268,17.268,0,0,0-1.434-2.746,5.564,5.564,0,0,0-.577-.643,1.077,1.077,0,0,0-.234-.19,2.294,2.294,0,0,0-.34-.157c-.171-.066-.352-.108-.516-.186a1.93,1.93,0,0,0-1.094-.135,21.35,21.35,0,0,1-4.042.324c-.447-.026-.9.017-1.346-.01-.611-.037-1.223-.085-1.832-.147a4.351,4.351,0,0,1-2.415-.88A3.836,3.836,0,0,1,209.1,431.5,4.243,4.243,0,0,1,209.011,430.715Zm23.431-14.663c.062,1.087.393,2,1.648,2.016.977.014,1.944-.053,2.923-.016,1.288.049,3.761.45,3.819-1.424a9.084,9.084,0,0,1,.143-1.391,5.826,5.826,0,0,1,1.243-3.052,16.12,16.12,0,0,1,2.185-1.553,5.564,5.564,0,0,0,1.682-2.216,13.071,13.071,0,0,0,.974-7.9,23.687,23.687,0,0,0-1.051-3.841,7.556,7.556,0,0,0-2.324-2.784c-2.752-2.366-6.088-2.975-9.453-3.991a20.332,20.332,0,0,0-6.451-1.088,13.709,13.709,0,0,0-4.105,1.14c-1.467.507-2.96.941-4.395,1.536a8.176,8.176,0,0,0-2.443,1.438c-1.211,1.112-1.8,2.7-2.857,3.939a4.732,4.732,0,0,0-1.2,1.619,8.142,8.142,0,0,0-.454,2.792c.02,1.432,1.02,2.714,1.883,3.774s1.747,2,3.233,1.992c1.216,0,2.482-.661,3.6.156.7.51.979,1.418,1.546,2.074,1.037,1.2,2.8,1.332,4.265,1.115a9.226,9.226,0,0,1,2.743-.252,3.539,3.539,0,0,1,2.823,2.906C232.576,413.776,232.382,415,232.442,416.053Z"
+                transform="translate(-203.813 -381.251)" fill="#fff" />
+              <path id="Path_22978" data-name="Path 22978"
+                d="M285.384,443.214a8.865,8.865,0,0,0,6.87-3.624,6.49,6.49,0,0,0,1.074-1.831c.052-.157-.046-.263-.187-.315a2.04,2.04,0,0,1-.973-.483.514.514,0,0,1,.02-.707,18.883,18.883,0,0,1,1.573-1.333c.54-.426,1.062-.87,1.579-1.325.649-.573,1.006.853,1.1,1.248.138.568.274,1.137.393,1.709a7.573,7.573,0,0,1,.258,1.7.415.415,0,0,1-.116.264c-.2.186-.41.368-.693.256a5.231,5.231,0,0,1-.727-.353c-.151-.089-.326-.172-.433.024-.16.294-.291.6-.464.889a12.384,12.384,0,0,1-5.927,5.1,8.625,8.625,0,0,1-3.085.632,3.275,3.275,0,0,1-1-.009.911.911,0,0,1-.572-1.138,1.4,1.4,0,0,1,1.292-.706Z"
+                transform="translate(-263.513 -420.116)" fill="#fff" />
+              <path id="Path_22979" data-name="Path 22979"
+                d="M325.057,472.283a3.625,3.625,0,0,1-1.792-.392,3.683,3.683,0,0,1-1.854-2.063,4.1,4.1,0,0,1,.1-2.838,3.671,3.671,0,0,1,2.236-1.975,3.744,3.744,0,0,1,3.13.336,4.386,4.386,0,0,1,.694.562,3.8,3.8,0,0,1,1,1.573,3.616,3.616,0,0,1-.073,2.378A3.824,3.824,0,0,1,325.057,472.283Zm-.16-1.4a2.261,2.261,0,0,0,1.888-.849,2.194,2.194,0,0,0,.485-1.958,2.913,2.913,0,0,0-1.025-1.457,2.152,2.152,0,0,0-1.8-.347,2.428,2.428,0,0,0-1.627,1.235,2.363,2.363,0,0,0,2.075,3.375Z"
+                transform="translate(-291.195 -443.457)" fill="#fff" />
+            </g>
+            <g id="Group_14134" data-name="Group 14134" transform="translate(18.128 10.682)">
+              <path id="Path_22980" data-name="Path 22980"
+                d="M283.906,427.628a.863.863,0,0,1-.863.863h-2.864v2.864a.863.863,0,1,1-1.726,0v-2.864h-2.864a.863.863,0,0,1,0-1.726h2.864V423.9a.863.863,0,1,1,1.726,0v2.864h2.864A.863.863,0,0,1,283.906,427.628Z"
+                transform="translate(-274.726 -423.038)" fill="#fff" />
+            </g>
+          </svg> Tac-Tic-Tec</a>
+        <ul>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20.166" height="20.166" viewBox="0 0 20.166 20.166">
+              <g id="pie-chart_1_" data-name="pie-chart (1)" transform="translate(0 1)">
+                <g id="Group_10" data-name="Group 10" transform="translate(0 2.2)">
+                  <g id="Group_9" data-name="Group 9">
+                    <path id="Path_7" data-name="Path 7" d="M9.048,69.917V62H8.483a8.483,8.483,0,1,0,8.483,8.483v-.566Z"
+                      transform="translate(0 -62)" fill="#fff" />
+                  </g>
+                </g>
+                <g id="Group_12" data-name="Group 12" transform="translate(11.118 -1)">
+                  <g id="Group_11" data-name="Group 11">
+                    <path id="Path_8" data-name="Path 8"
+                      d="M272.565,0H272V9.048h9.048V8.483A8.492,8.492,0,0,0,272.565,0Z" transform="translate(-272)"
+                      fill="#fff" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <a href="#" alt="Dashboard" class="app__sidebar-link">Dashboard</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.047" height="21.045" viewBox="0 0 16.047 21.045">
+              <g id="tactic" transform="translate(-60.795)">
+                <circle id="Ellipse_4449" data-name="Ellipse 4449" cx="1.028" cy="1.028" r="1.028"
+                  transform="translate(64.494 15.29)" fill="#fff" />
+                <path id="Path_43121" data-name="Path 43121"
+                  d="M76.181,30.663a2.246,2.246,0,0,0-1.6-.663h-.409v.822a1.646,1.646,0,0,1-1.644,1.644h-7.4a1.646,1.646,0,0,1-1.644-1.644V30h-.413a2.264,2.264,0,0,0-2.261,2.258l-.017,15.29a2.261,2.261,0,0,0,2.261,2.263H74.564a2.264,2.264,0,0,0,2.261-2.258l.017-15.29A2.246,2.246,0,0,0,76.181,30.663ZM63.261,45.085a2.261,2.261,0,1,1,2.261,2.261A2.263,2.263,0,0,1,63.261,45.085Zm7.156-10.1a.617.617,0,0,1,.872-.872l1.017,1.017,1.017-1.017a.617.617,0,0,1,.872.872L73.178,36,74.2,37.015a.617.617,0,1,1-.872.872L72.306,36.87l-1.017,1.017a.617.617,0,0,1-.872-.872L71.434,36Zm-5.5-.678a.617.617,0,0,1,.872,0l1.458,1.458a.617.617,0,1,1-.872.872l-.4-.4V38.36a1.86,1.86,0,0,0,1.193,1.729l3.584,1.362a3.1,3.1,0,0,1,1.988,2.882v2.4a.617.617,0,0,1-1.233,0v-2.4A1.86,1.86,0,0,0,70.306,42.6l-3.584-1.362a3.1,3.1,0,0,1-1.988-2.882V36.224l-.4.4a.617.617,0,0,1-.872-.872Z"
+                  transform="translate(0 -28.767)" fill="#fff" />
+                <path id="Path_43122" data-name="Path 43122"
+                  d="M156.25,2.055a.411.411,0,0,0,.411.411h7.4a.411.411,0,0,0,.411-.411V.411A.411.411,0,0,0,164.06,0h-7.4a.411.411,0,0,0-.411.411Z"
+                  transform="translate(-91.532 0)" fill="#fff" />
+              </g>
+            </svg>
+            <a href="#" alt="Tactics Vault" class="app__sidebar-link">Tactics Vault</a>
+          </li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="23.532" height="19.961" viewBox="0 0 23.532 19.961">
+              <g id="group_2_" data-name="group (2)" transform="translate(0 -38.84)">
+                <g id="Group_14500" data-name="Group 14500" transform="translate(18.315 49.617)">
+                  <g id="Group_14499" data-name="Group 14499">
+                    <path id="Path_43123" data-name="Path 43123"
+                      d="M400.314,273.32h-1.82a4.733,4.733,0,0,1,.287,1.627v6.878a2.028,2.028,0,0,1-.117.679h3.009a2.04,2.04,0,0,0,2.038-2.038v-3.749A3.4,3.4,0,0,0,400.314,273.32Z"
+                      transform="translate(-398.494 -273.32)" fill="#fff" />
+                  </g>
+                </g>
+                <g id="Group_14502" data-name="Group 14502" transform="translate(0 49.617)">
+                  <g id="Group_14501" data-name="Group 14501" transform="translate(0 0)">
+                    <path id="Path_43124" data-name="Path 43124"
+                      d="M4.93,274.948a4.734,4.734,0,0,1,.287-1.627H3.4a3.4,3.4,0,0,0-3.4,3.4v3.749a2.04,2.04,0,0,0,2.038,2.038H5.047a2.029,2.029,0,0,1-.117-.679Z"
+                      transform="translate(0 -273.321)" fill="#fff" />
+                  </g>
+                </g>
+                <g id="Group_14504" data-name="Group 14504" transform="translate(6.289 47.847)">
+                  <g id="Group_14503" data-name="Group 14503" transform="translate(0 0)">
+                    <path id="Path_43125" data-name="Path 43125"
+                      d="M144.386,234.815h-4.16a3.4,3.4,0,0,0-3.4,3.4v6.878a.679.679,0,0,0,.679.679h9.6a.679.679,0,0,0,.679-.679v-6.878A3.4,3.4,0,0,0,144.386,234.815Z"
+                      transform="translate(-136.829 -234.815)" fill="#fff" />
+                  </g>
+                </g>
+                <g id="Group_14506" data-name="Group 14506" transform="translate(7.681 38.84)">
+                  <g id="Group_14505" data-name="Group 14505" transform="translate(0 0)">
+                    <path id="Path_43126" data-name="Path 43126"
+                      d="M171.2,38.84a4.085,4.085,0,1,0,4.085,4.085A4.09,4.09,0,0,0,171.2,38.84Z"
+                      transform="translate(-167.114 -38.84)" fill="#fff" />
+                  </g>
+                </g>
+                <g id="Group_14508" data-name="Group 14508" transform="translate(1.537 42.648)">
+                  <g id="Group_14507" data-name="Group 14507" transform="translate(0 0)">
+                    <path id="Path_43127" data-name="Path 43127"
+                      d="M36.5,121.689a3.054,3.054,0,1,0,3.055,3.055A3.059,3.059,0,0,0,36.5,121.689Z"
+                      transform="translate(-33.443 -121.689)" fill="#fff" />
+                  </g>
+                </g>
+                <g id="Group_14510" data-name="Group 14510" transform="translate(15.884 42.648)">
+                  <g id="Group_14509" data-name="Group 14509" transform="translate(0 0)">
+                    <path id="Path_43128" data-name="Path 43128"
+                      d="M348.662,121.689a3.055,3.055,0,1,0,3.055,3.055A3.059,3.059,0,0,0,348.662,121.689Z"
+                      transform="translate(-345.607 -121.689)" fill="#fff" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <a href="#" alt="Teams" class="app__sidebar-link">Teams</a>
+          </li>
+          <li class="active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17.952" height="21.089" viewBox="0 0 17.952 21.089">
+              <g id="notebook" transform="translate(-147 -42.565)">
+                <path id="Path_43130" data-name="Path 43130"
+                  d="M154.1,59.62V55.909l7.4-7.423V44.238h-3.4V42.565h-1.521v1.673h-1.673V42.565h-1.521v1.673h-1.673V42.565h-1.521v1.673H147V63.654h14.5V55.767l-3.841,3.852Zm-4.309-11.174h5.12v1.521h-5.12Zm3.244,4.563h-3.244V51.487h3.244Z"
+                  fill="#fff" />
+                <path id="Path_43131" data-name="Path 43131" d="M322.593,207.525,317,213.135V214.7h1.408l5.67-5.686Z"
+                  transform="translate(-161.382 -156.597)" fill="#fff" />
+                <path id="Path_43132" data-name="Path 43132" d="M451.178,164.3l-1.183,1.186L448.51,164l1.186-1.189Z"
+                  transform="translate(-286.225 -114.154)" fill="#fff" />
+              </g>
+            </svg>
+            <a href="#" alt="Schedule Generator" class="app__sidebar-link">Schedule Generator</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="19.91" height="20.362" viewBox="0 0 19.91 20.362">
+              <g id="calendar_2_" data-name="calendar (2)" transform="translate(-5.411)">
+                <g id="Group_14511" data-name="Group 14511" transform="translate(5.411)">
+                  <path id="Path_43133" data-name="Path 43133"
+                    d="M119.572,258.7a.462.462,0,0,0-.462-.462H117.5a.462.462,0,0,0-.462.462v1.613a.462.462,0,0,0,.462.462h1.613a.462.462,0,0,0,.462-.462V258.7Z"
+                    transform="translate(-112.379 -247.47)" fill="#fff" />
+                  <path id="Path_43134" data-name="Path 43134"
+                    d="M216.207,258.7a.462.462,0,0,0-.462-.462h-1.613a.462.462,0,0,0-.462.462v1.613a.462.462,0,0,0,.462.462h1.613a.462.462,0,0,0,.462-.462Z"
+                    transform="translate(-204.983 -247.47)" fill="#fff" />
+                  <path id="Path_43135" data-name="Path 43135"
+                    d="M312.835,258.7a.462.462,0,0,0-.462-.462H310.76a.462.462,0,0,0-.462.462v1.613a.462.462,0,0,0,.462.462h1.613a.462.462,0,0,0,.462-.462Z"
+                    transform="translate(-297.581 -247.47)" fill="#fff" />
+                  <path id="Path_43136" data-name="Path 43136"
+                    d="M119.572,355.337a.462.462,0,0,0-.462-.462H117.5a.462.462,0,0,0-.462.462v1.612a.462.462,0,0,0,.462.462h1.613a.462.462,0,0,0,.462-.462v-1.612Z"
+                    transform="translate(-112.379 -340.073)" fill="#fff" />
+                  <path id="Path_43137" data-name="Path 43137"
+                    d="M216.207,355.337a.462.462,0,0,0-.462-.462h-1.613a.462.462,0,0,0-.462.462v1.612a.462.462,0,0,0,.462.462h1.613a.462.462,0,0,0,.462-.462Z"
+                    transform="translate(-204.983 -340.073)" fill="#fff" />
+                  <path id="Path_43138" data-name="Path 43138"
+                    d="M312.835,355.337a.462.462,0,0,0-.462-.462H310.76a.462.462,0,0,0-.462.462v1.612a.462.462,0,0,0,.462.462h1.613a.462.462,0,0,0,.462-.462v-1.612Z"
+                    transform="translate(-297.581 -340.073)" fill="#fff" />
+                  <path id="Path_43139" data-name="Path 43139"
+                    d="M23.549,54.151v2.463a2.012,2.012,0,0,1-2.016,2.01H20.261a2.022,2.022,0,0,1-2.028-2.01V54.142H12.5v2.472a2.022,2.022,0,0,1-2.028,2.01H9.2a2.012,2.012,0,0,1-2.016-2.01V54.151a1.833,1.833,0,0,0-1.772,1.824V70.409a1.834,1.834,0,0,0,1.825,1.836H23.5a1.836,1.836,0,0,0,1.825-1.836V55.975A1.833,1.833,0,0,0,23.549,54.151Zm-.591,15.36a.789.789,0,0,1-.789.789H8.528a.789.789,0,0,1-.789-.789V62.054a.789.789,0,0,1,.789-.789H22.169a.789.789,0,0,1,.789.789V69.51Z"
+                    transform="translate(-5.411 -51.884)" fill="#fff" />
+                  <path id="Path_43140" data-name="Path 43140"
+                    d="M80.242,5.42H81.5a.691.691,0,0,0,.691-.691V.691A.691.691,0,0,0,81.5,0H80.242a.691.691,0,0,0-.691.691V4.729A.691.691,0,0,0,80.242,5.42Z"
+                    transform="translate(-76.458)" fill="#fff" />
+                  <path id="Path_43141" data-name="Path 43141"
+                    d="M345.149,5.42h1.258a.691.691,0,0,0,.691-.691V.691A.691.691,0,0,0,346.408,0h-1.258a.691.691,0,0,0-.691.691V4.729A.691.691,0,0,0,345.149,5.42Z"
+                    transform="translate(-330.316)" fill="#fff" />
+                </g>
+              </g>
+            </svg>
+            <a href="#" alt="Weekly Training Plans" class="app__sidebar-link">Weekly Training Plans</a>
+          </li>
+          <li>
+            <svg id="bar-chart" xmlns="http://www.w3.org/2000/svg" width="20.462" height="20.462"
+              viewBox="0 0 20.462 20.462">
+              <g id="Group_14513" data-name="Group 14513" transform="translate(1.239)">
+                <g id="Group_14512" data-name="Group 14512">
+                  <path id="Path_43142" data-name="Path 43142"
+                    d="M47.186,0a1.8,1.8,0,0,0-1.8,1.8,1.781,1.781,0,0,0,.361,1.07L42.816,6.051a1.742,1.742,0,0,0-1.421.246L39.3,4.729a1.772,1.772,0,0,0,.09-.533,1.8,1.8,0,1,0-3.6,0,1.773,1.773,0,0,0,.09.533L33.794,6.3a1.872,1.872,0,1,0,.713.963L36.6,5.692a1.789,1.789,0,0,0,1.991,0L40.681,7.26a1.772,1.772,0,0,0-.09.533,1.8,1.8,0,0,0,3.6,0,1.781,1.781,0,0,0-.361-1.07L46.76,3.54a1.78,1.78,0,0,0,.426.056,1.8,1.8,0,1,0,0-3.6Z"
+                    transform="translate(-31)" fill="#fff" />
+                </g>
+              </g>
+              <g id="Group_14515" data-name="Group 14515" transform="translate(6.035 9.592)">
+                <g id="Group_14514" data-name="Group 14514">
+                  <path id="Path_43143" data-name="Path 43143"
+                    d="M154,240h-2.4a.6.6,0,0,0-.6.6v7.873h3.6V240.6A.6.6,0,0,0,154,240Z"
+                    transform="translate(-151 -240)" fill="#fff" />
+                </g>
+              </g>
+              <g id="Group_14517" data-name="Group 14517" transform="translate(10.831 11.99)">
+                <g id="Group_14516" data-name="Group 14516">
+                  <path id="Path_43144" data-name="Path 43144"
+                    d="M274,300h-2.4a.6.6,0,0,0-.6.6v5.475h3.6V300.6A.6.6,0,0,0,274,300Z"
+                    transform="translate(-271 -300)" fill="#fff" />
+                </g>
+              </g>
+              <g id="Group_14519" data-name="Group 14519" transform="translate(15.626 7.194)">
+                <g id="Group_14518" data-name="Group 14518">
+                  <path id="Path_43145" data-name="Path 43145"
+                    d="M394,180h-2.4a.6.6,0,0,0-.6.6v10.271h3.6V180.6A.6.6,0,0,0,394,180Z"
+                    transform="translate(-391 -180)" fill="#fff" />
+                </g>
+              </g>
+              <g id="Group_14521" data-name="Group 14521" transform="translate(1.239 13.188)">
+                <g id="Group_14520" data-name="Group 14520">
+                  <path id="Path_43146" data-name="Path 43146"
+                    d="M34,330H31.6a.6.6,0,0,0-.6.6v4.276h3.6V330.6A.6.6,0,0,0,34,330Z" transform="translate(-31 -330)"
+                    fill="#fff" />
+                </g>
+              </g>
+              <g id="Group_14523" data-name="Group 14523" transform="translate(0 19.263)">
+                <g id="Group_14522" data-name="Group 14522">
+                  <path id="Path_43147" data-name="Path 43147"
+                    d="M19.863,482H.6a.6.6,0,0,0,0,1.2H19.863a.6.6,0,0,0,0-1.2Z" transform="translate(0 -482)"
+                    fill="#fff" />
+                </g>
+              </g>
+            </svg>
+            <a href="#" alt="Team Metrics" class="app__sidebar-link">Team Metrics</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="19.811" height="20.362" viewBox="0 0 19.811 20.362">
+              <g id="settings" transform="translate(-5.768)">
+                <g id="Group_11622" data-name="Group 11622" transform="translate(5.768)">
+                  <path id="Path_20" data-name="Path 20"
+                    d="M25.384,12.858l-2.148-1.685a8,8,0,0,0,.071-.993,8,8,0,0,0-.071-.993L25.389,7.5a.508.508,0,0,0,.122-.652L23.475,3.324a.5.5,0,0,0-.621-.219L20.319,4.128a7.725,7.725,0,0,0-1.721-1l-.382-2.7A.524.524,0,0,0,17.707,0H13.635a.514.514,0,0,0-.5.428l-.382,2.7a7.534,7.534,0,0,0-1.721,1L8.494,3.105a.509.509,0,0,0-.621.219L5.836,6.852a.51.51,0,0,0,.122.652L8.107,9.188a8,8,0,0,0-.071.993,8,8,0,0,0,.071.993L5.958,12.858a.508.508,0,0,0-.122.652l2.036,3.528a.5.5,0,0,0,.621.219l2.535-1.023a7.725,7.725,0,0,0,1.721,1l.382,2.7a.514.514,0,0,0,.5.428h4.072a.514.514,0,0,0,.5-.428l.382-2.7a7.534,7.534,0,0,0,1.721-1l2.535,1.023a.509.509,0,0,0,.621-.219l2.036-3.528A.51.51,0,0,0,25.384,12.858Zm-9.713.886a3.563,3.563,0,1,1,3.563-3.563A3.561,3.561,0,0,1,15.671,13.744Z"
+                    transform="translate(-5.768)" fill="#fff" />
+                </g>
+              </g>
+            </svg>
+            <a href="#" alt="Customizations" class="app__sidebar-link">Customizations</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app__section">
+      <nav>
+        <ul>
+          <li class="active-nav"><a href="#" alt="Teams" class="app__navbar-link">Teams</a></li>
+          <li><a href="#" alt="U23" class="app__navbar-link">U23</a></li>
+          <li><a href="#" alt="U19" class="app__navbar-link">U19</a></li>
+        </ul>
+
+        <div class="dropdown">
+          <button class="dropbtn">Marcus
+            <svg xmlns="http://www.w3.org/2000/svg" width="10.282" height="6.089" viewBox="0 0 10.282 6.089">
+              <g id="arrow-down-sign-to-navigate_1_" data-name="arrow-down-sign-to-navigate (1)"
+                transform="translate(-0.001 -97.141)">
+                <path id="Path_9" data-name="Path 9"
+                  d="M5.142,103.23a.7.7,0,0,1-.509-.219L.212,98.418a.769.769,0,0,1,0-1.058.7.7,0,0,1,1.018,0l3.912,4.064L9.053,97.36a.7.7,0,0,1,1.018,0,.769.769,0,0,1,0,1.058l-4.421,4.593A.7.7,0,0,1,5.142,103.23Z"
+                  transform="translate(0 0)" fill="#676767" />
+              </g>
+            </svg>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="app__add-search-btn">
+          <button type="button" class="app__add-btn">Add New Schedule</button>
+
+          <div class="app__search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18.962" height="18.962" viewBox="0 0 18.962 18.962">
+              <path id="magnifiying-glass_1_" data-name="magnifiying-glass (1)"
+                d="M18.746,17.7l-4.628-4.628a7.992,7.992,0,1,0-1.043,1.042L17.7,18.746A.737.737,0,1,0,18.746,17.7ZM1.474,7.981a6.506,6.506,0,1,1,6.506,6.506A6.514,6.514,0,0,1,1.474,7.981Z"
+                fill="#afafaf" />
+            </svg>
+
+            <input type="text" class="app__search-btn" placeholder="Search your schedule">
+          </div>
+        </div>
+
+        <div class="app__container">
+
+          <div class="app__schedule">
+            <div class="app__schedule-head">
+              <div class="app__schedule-title">
+                <h4>Winter Training Schedule</h4>
+                <p>4 Weeks | 12 Sessions</p>
+              </div>
+              <div class="app__schedule-btns">
+                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                    viewBox="0 0 28.574 28.303">
+                    <g id="Group_14734" data-name="Group 14734" transform="translate(-1722 -148.739)">
+                      <g id="edit_1_" data-name="edit (1)" transform="translate(1722 148.739)">
+                        <path id="Path_42020" data-name="Path 42020"
+                          d="M183.26,81.717a.86.86,0,0,0-.233.433l-1.2,6.013a.85.85,0,0,0,.835,1.017.81.81,0,0,0,.167-.017l6.011-1.2a.847.847,0,0,0,.435-.233l13.455-13.455-6.011-6.011Zm0,0"
+                          transform="translate(-181.808 -60.877)" fill="#a2a2a2" />
+                        <path id="Path_42021" data-name="Path 42021"
+                          d="M399.81,1.745a4.254,4.254,0,0,0-6.011,0L391.446,4.1l6.011,6.011,2.353-2.354a4.251,4.251,0,0,0,0-6.011Zm0,0"
+                          transform="translate(-372.481 -0.501)" fill="#a2a2a2" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="25"
+                    viewBox="0 0 19.121 28.303">
+                    <g id="Group_14733" data-name="Group 14733" transform="translate(-1833.053 -145)">
+                      <g id="trash-can" transform="translate(1833.053 145)">
+                        <path id="XMLID_1089_"
+                          d="M102.144,93l-.617-1.85a.912.912,0,0,0-.865-.623H84.573a.912.912,0,0,0-.865.623L83.091,93a.647.647,0,0,0,.614.852H101.53A.647.647,0,0,0,102.144,93Z"
+                          transform="translate(-83.057 -85.526)" fill="#f84444" />
+                        <path id="XMLID_835_"
+                          d="M102.961,197.886A1.257,1.257,0,0,0,104.21,199h10.709a1.257,1.257,0,0,0,1.25-1.118l1.911-17.2H101.05Z"
+                          transform="translate(-100.055 -170.701)" fill="#f84444" />
+                        <path id="XMLID_831_"
+                          d="M197.548,2.377a.719.719,0,0,1,.719-.719h2.443a.719.719,0,0,1,.719.719v.969h1.658V2.377A2.38,2.38,0,0,0,200.71,0h-2.443a2.38,2.38,0,0,0-2.377,2.377v.969h1.658Z"
+                          transform="translate(-189.653)" fill="#f84444" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button type="button" class="collapsible"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="15"
+                    viewBox="0 0 29 15">
+                    <path id="Polygon_10" data-name="Polygon 10"
+                      d="M12.343,2.231a3,3,0,0,1,4.314,0l7.427,7.684A3,3,0,0,1,21.927,15H7.073A3,3,0,0,1,4.916,9.915Z"
+                      fill="#32cd32" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="app__schedule-expand">
+            <div class="app__schedule-date-update">
+              <div class="app__schedule-date">
+                <div class="app__schedule-start-date">
+                  <p>START DATE</p>
+                  <h4>25 January 2020</h4>
+                </div>
+                <div class="app__schedule-end-date">
+                  <p>END DATE</p>
+                  <h4>19 February 2020</h4>
+                </div>
+              </div>
+              <button type="button">Update</button>
+            </div>
+
+            <div class="app__schedule-days">
+              <div class="app__schedule-day">
+                  <input type="radio" id="sunday" name="day" value="sunday">
+                  <label for="sunday">SUNDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="monday" name="day" value="monday">
+                  <label for="monday">MONDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="tuesday" name="day" value="tuesday">
+                  <label for="tuesday">TUESDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="wednesday" name="day" value="wednesday">
+                  <label for="wednesday">WEDNESDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="thursday" name="day" value="thursday">
+                  <label for="thursday">THURSDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="friday" name="day" value="friday">
+                  <label for="friday">FRIDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="saturday" name="day" value="saturday">
+                  <label for="saturday">SATURDAY</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app__container">
+
+          <div class="app__schedule">
+            <div class="app__schedule-head">
+              <div class="app__schedule-title">
+                <h4>Winter Training Schedule</h4>
+                <p>4 Weeks | 12 Sessions</p>
+              </div>
+              <div class="app__schedule-btns">
+                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                    viewBox="0 0 28.574 28.303">
+                    <g id="Group_14734" data-name="Group 14734" transform="translate(-1722 -148.739)">
+                      <g id="edit_1_" data-name="edit (1)" transform="translate(1722 148.739)">
+                        <path id="Path_42020" data-name="Path 42020"
+                          d="M183.26,81.717a.86.86,0,0,0-.233.433l-1.2,6.013a.85.85,0,0,0,.835,1.017.81.81,0,0,0,.167-.017l6.011-1.2a.847.847,0,0,0,.435-.233l13.455-13.455-6.011-6.011Zm0,0"
+                          transform="translate(-181.808 -60.877)" fill="#a2a2a2" />
+                        <path id="Path_42021" data-name="Path 42021"
+                          d="M399.81,1.745a4.254,4.254,0,0,0-6.011,0L391.446,4.1l6.011,6.011,2.353-2.354a4.251,4.251,0,0,0,0-6.011Zm0,0"
+                          transform="translate(-372.481 -0.501)" fill="#a2a2a2" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="25"
+                    viewBox="0 0 19.121 28.303">
+                    <g id="Group_14733" data-name="Group 14733" transform="translate(-1833.053 -145)">
+                      <g id="trash-can" transform="translate(1833.053 145)">
+                        <path id="XMLID_1089_"
+                          d="M102.144,93l-.617-1.85a.912.912,0,0,0-.865-.623H84.573a.912.912,0,0,0-.865.623L83.091,93a.647.647,0,0,0,.614.852H101.53A.647.647,0,0,0,102.144,93Z"
+                          transform="translate(-83.057 -85.526)" fill="#f84444" />
+                        <path id="XMLID_835_"
+                          d="M102.961,197.886A1.257,1.257,0,0,0,104.21,199h10.709a1.257,1.257,0,0,0,1.25-1.118l1.911-17.2H101.05Z"
+                          transform="translate(-100.055 -170.701)" fill="#f84444" />
+                        <path id="XMLID_831_"
+                          d="M197.548,2.377a.719.719,0,0,1,.719-.719h2.443a.719.719,0,0,1,.719.719v.969h1.658V2.377A2.38,2.38,0,0,0,200.71,0h-2.443a2.38,2.38,0,0,0-2.377,2.377v.969h1.658Z"
+                          transform="translate(-189.653)" fill="#f84444" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button type="button" class="collapsible"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="15"
+                    viewBox="0 0 29 15">
+                    <path id="Polygon_10" data-name="Polygon 10"
+                      d="M12.343,2.231a3,3,0,0,1,4.314,0l7.427,7.684A3,3,0,0,1,21.927,15H7.073A3,3,0,0,1,4.916,9.915Z"
+                      fill="#32cd32" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="app__schedule-expand">
+            <div class="app__schedule-date-update">
+              <div class="app__schedule-date">
+                <div class="app__schedule-start-date">
+                  <p>START DATE</p>
+                  <h4>25 January 2020</h4>
+                </div>
+                <div class="app__schedule-end-date">
+                  <p>END DATE</p>
+                  <h4>19 February 2020</h4>
+                </div>
+              </div>
+              <button type="button">Update</button>
+            </div>
+
+            <div class="app__schedule-days">
+              <div class="app__schedule-day">
+                  <input type="radio" id="sunday" name="day" value="sunday">
+                  <label for="sunday">SUNDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="monday" name="day" value="monday">
+                  <label for="monday">MONDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="tuesday" name="day" value="tuesday">
+                  <label for="tuesday">TUESDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="wednesday" name="day" value="wednesday">
+                  <label for="wednesday">WEDNESDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="thursday" name="day" value="thursday">
+                  <label for="thursday">THURSDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="friday" name="day" value="friday">
+                  <label for="friday">FRIDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="saturday" name="day" value="saturday">
+                  <label for="saturday">SATURDAY</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app__container">
+
+          <div class="app__schedule">
+            <div class="app__schedule-head">
+              <div class="app__schedule-title">
+                <h4>Winter Training Schedule</h4>
+                <p>4 Weeks | 12 Sessions</p>
+              </div>
+              <div class="app__schedule-btns">
+                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                    viewBox="0 0 28.574 28.303">
+                    <g id="Group_14734" data-name="Group 14734" transform="translate(-1722 -148.739)">
+                      <g id="edit_1_" data-name="edit (1)" transform="translate(1722 148.739)">
+                        <path id="Path_42020" data-name="Path 42020"
+                          d="M183.26,81.717a.86.86,0,0,0-.233.433l-1.2,6.013a.85.85,0,0,0,.835,1.017.81.81,0,0,0,.167-.017l6.011-1.2a.847.847,0,0,0,.435-.233l13.455-13.455-6.011-6.011Zm0,0"
+                          transform="translate(-181.808 -60.877)" fill="#a2a2a2" />
+                        <path id="Path_42021" data-name="Path 42021"
+                          d="M399.81,1.745a4.254,4.254,0,0,0-6.011,0L391.446,4.1l6.011,6.011,2.353-2.354a4.251,4.251,0,0,0,0-6.011Zm0,0"
+                          transform="translate(-372.481 -0.501)" fill="#a2a2a2" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="25"
+                    viewBox="0 0 19.121 28.303">
+                    <g id="Group_14733" data-name="Group 14733" transform="translate(-1833.053 -145)">
+                      <g id="trash-can" transform="translate(1833.053 145)">
+                        <path id="XMLID_1089_"
+                          d="M102.144,93l-.617-1.85a.912.912,0,0,0-.865-.623H84.573a.912.912,0,0,0-.865.623L83.091,93a.647.647,0,0,0,.614.852H101.53A.647.647,0,0,0,102.144,93Z"
+                          transform="translate(-83.057 -85.526)" fill="#f84444" />
+                        <path id="XMLID_835_"
+                          d="M102.961,197.886A1.257,1.257,0,0,0,104.21,199h10.709a1.257,1.257,0,0,0,1.25-1.118l1.911-17.2H101.05Z"
+                          transform="translate(-100.055 -170.701)" fill="#f84444" />
+                        <path id="XMLID_831_"
+                          d="M197.548,2.377a.719.719,0,0,1,.719-.719h2.443a.719.719,0,0,1,.719.719v.969h1.658V2.377A2.38,2.38,0,0,0,200.71,0h-2.443a2.38,2.38,0,0,0-2.377,2.377v.969h1.658Z"
+                          transform="translate(-189.653)" fill="#f84444" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button type="button" class="collapsible"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="15"
+                    viewBox="0 0 29 15">
+                    <path id="Polygon_10" data-name="Polygon 10"
+                      d="M12.343,2.231a3,3,0,0,1,4.314,0l7.427,7.684A3,3,0,0,1,21.927,15H7.073A3,3,0,0,1,4.916,9.915Z"
+                      fill="#32cd32" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="app__schedule-expand">
+            <div class="app__schedule-date-update">
+              <div class="app__schedule-date">
+                <div class="app__schedule-start-date">
+                  <p>START DATE</p>
+                  <h4>25 January 2020</h4>
+                </div>
+                <div class="app__schedule-end-date">
+                  <p>END DATE</p>
+                  <h4>19 February 2020</h4>
+                </div>
+              </div>
+              <button type="button">Update</button>
+            </div>
+
+            <div class="app__schedule-days">
+              <div class="app__schedule-day">
+                  <input type="radio" id="sunday" name="day" value="sunday">
+                  <label for="sunday">SUNDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="monday" name="day" value="monday">
+                  <label for="monday">MONDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="tuesday" name="day" value="tuesday">
+                  <label for="tuesday">TUESDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="wednesday" name="day" value="wednesday">
+                  <label for="wednesday">WEDNESDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="thursday" name="day" value="thursday">
+                  <label for="thursday">THURSDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="friday" name="day" value="friday">
+                  <label for="friday">FRIDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="saturday" name="day" value="saturday">
+                  <label for="saturday">SATURDAY</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app__container">
+
+          <div class="app__schedule">
+
+            <div class="app__schedule-head">
+              <div class="app__schedule-title">
+                <h4>Winter Training Schedule</h4>
+                <p>4 Weeks | 12 Sessions</p>
+              </div>
+              <div class="app__schedule-btns">
+                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                    viewBox="0 0 28.574 28.303">
+                    <g id="Group_14734" data-name="Group 14734" transform="translate(-1722 -148.739)">
+                      <g id="edit_1_" data-name="edit (1)" transform="translate(1722 148.739)">
+                        <path id="Path_42020" data-name="Path 42020"
+                          d="M183.26,81.717a.86.86,0,0,0-.233.433l-1.2,6.013a.85.85,0,0,0,.835,1.017.81.81,0,0,0,.167-.017l6.011-1.2a.847.847,0,0,0,.435-.233l13.455-13.455-6.011-6.011Zm0,0"
+                          transform="translate(-181.808 -60.877)" fill="#a2a2a2" />
+                        <path id="Path_42021" data-name="Path 42021"
+                          d="M399.81,1.745a4.254,4.254,0,0,0-6.011,0L391.446,4.1l6.011,6.011,2.353-2.354a4.251,4.251,0,0,0,0-6.011Zm0,0"
+                          transform="translate(-372.481 -0.501)" fill="#a2a2a2" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="25"
+                    viewBox="0 0 19.121 28.303">
+                    <g id="Group_14733" data-name="Group 14733" transform="translate(-1833.053 -145)">
+                      <g id="trash-can" transform="translate(1833.053 145)">
+                        <path id="XMLID_1089_"
+                          d="M102.144,93l-.617-1.85a.912.912,0,0,0-.865-.623H84.573a.912.912,0,0,0-.865.623L83.091,93a.647.647,0,0,0,.614.852H101.53A.647.647,0,0,0,102.144,93Z"
+                          transform="translate(-83.057 -85.526)" fill="#f84444" />
+                        <path id="XMLID_835_"
+                          d="M102.961,197.886A1.257,1.257,0,0,0,104.21,199h10.709a1.257,1.257,0,0,0,1.25-1.118l1.911-17.2H101.05Z"
+                          transform="translate(-100.055 -170.701)" fill="#f84444" />
+                        <path id="XMLID_831_"
+                          d="M197.548,2.377a.719.719,0,0,1,.719-.719h2.443a.719.719,0,0,1,.719.719v.969h1.658V2.377A2.38,2.38,0,0,0,200.71,0h-2.443a2.38,2.38,0,0,0-2.377,2.377v.969h1.658Z"
+                          transform="translate(-189.653)" fill="#f84444" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button type="button" class="collapsible"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="15"
+                    viewBox="0 0 29 15">
+                    <path id="Polygon_10" data-name="Polygon 10"
+                      d="M12.343,2.231a3,3,0,0,1,4.314,0l7.427,7.684A3,3,0,0,1,21.927,15H7.073A3,3,0,0,1,4.916,9.915Z"
+                      fill="#32cd32" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="app__schedule-expand">
+            <div class="app__schedule-date-update">
+              <div class="app__schedule-date">
+                <div class="app__schedule-start-date">
+                  <p>START DATE</p>
+                  <h4>25 January 2020</h4>
+                </div>
+                <div class="app__schedule-end-date">
+                  <p>END DATE</p>
+                  <h4>19 February 2020</h4>
+                </div>
+              </div>
+              <button type="button">Update</button>
+            </div>
+
+            <div class="app__schedule-days">
+              <div class="app__schedule-day">
+                  <input type="radio" id="sunday" name="day" value="sunday">
+                  <label for="sunday">SUNDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="monday" name="day" value="monday">
+                  <label for="monday">MONDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="tuesday" name="day" value="tuesday">
+                  <label for="tuesday">TUESDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="wednesday" name="day" value="wednesday">
+                  <label for="wednesday">WEDNESDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="thursday" name="day" value="thursday">
+                  <label for="thursday">THURSDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="friday" name="day" value="friday">
+                  <label for="friday">FRIDAY</label>
+              </div>
+              <div class="app__schedule-day">
+                  <input type="radio" id="saturday" name="day" value="saturday">
+                  <label for="saturday">SATURDAY</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
