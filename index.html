@@ -258,7 +258,7 @@
 
       <main>
         <div class="app__add-search-btn">
-          <button type="button" class="app__add-btn">Add New Schedule</button>
+          <button type="button" class="app__add-btn" onclick="toggleModal()">Add New Schedule</button>
 
           <div class="app__search">
             <svg xmlns="http://www.w3.org/2000/svg" width="18.962" height="18.962" viewBox="0 0 18.962 18.962">
@@ -669,6 +669,40 @@
         </div>
 
       </main>
+    </div>
+
+    <div id="m" class="modal">
+      <div class="overlay" onclick="toggleModal()"></div>
+      <div class="modal-content">
+      <h4 class="text-center">Create New Schedule</h4>
+      <hr/>
+
+      <div class="modal-inputs">
+        <div class="modal-input-name">
+          <label for="name">Schedule Name</label><br/>
+          <input type="text" id="name" class="name" name="name" placeholder="Enter name">
+        </div>
+        <div class="modal-input-dates">
+          <div class="modal-input-date">
+            <label for="startdate">Start Date</label><br/>
+            <input type="date" id="startdate" name="startdate" placeholder="Select start date">
+          </div>
+          <div class="modal-input-date">
+            <label for="enddate">End Date</label><br/>
+            <input type="date" id="enddate" name="enddate" placeholder="Select end date">
+          </div>
+          <div class="modal-input-date">
+            <label for="week">Schedule Name</label><br/>
+            <input type="text" id="week" name="week" placeholder="Enter No. of weeks">
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal-btns">
+       <button type="button" onclick="toggleModal()">Close</button>
+       <button type="button">Create</button>
+      </div>
+      </div>
     </div>
   </div>
 
