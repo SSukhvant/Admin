@@ -459,6 +459,7 @@ main {
 
 .modal-show {
   display: block;
+  overflow-y: hidden;
 }
 .modal-hide {
   display: none;
@@ -528,6 +529,7 @@ color: var(--heading-color);
 .modal .modal-content .modal-inputs .modal-input-dates{
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
   gap: 16px;
   margin-top: 16px;
 }
