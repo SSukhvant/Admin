@@ -65,12 +65,13 @@
   .app__sidebar-links ul {
     list-style: none;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
   }
 
   .app__sidebar-links ul li {
     display: flex;
     align-items: center;
+    flex: 1 100%;
     gap: 10px;
     padding: 24px 87px;
     max-width: 100%;
@@ -148,7 +149,14 @@
   }
   
   .dropdown {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown img {
+    height: 27px;
+    width: 27px;
+    align-self: center;
   }
   
   .dropdown-content {
@@ -571,6 +579,67 @@ color: var(--heading-color);
 .modal .modal-content .modal-btns button:last-child {
   background-color: var(--green-light);
   color: var(--white-color);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .app__sidebar{
+    flex: 1;
+    height: 100%;
+  }
+
+  .app__section {
+    flex: 1;
+  } 
+
+  .app__sidebar-logo {
+    margin: 16px 0;
+  }
+
+  .app__sidebar-links {
+    flex-direction: column;
+  }
+
+  .app__sidebar-links ul {
+    flex: 1 15%;
+    flex-direction: row;
+  }
+
+  .app__sidebar-links ul li {
+    padding: 10px;
+    border-right: 4px solid var(--green-light);
+    border-bottom: 4px solid var(--green-light);
+  }
+  .app__sidebar-links ul li:hover {
+    border-right: 4px solid var(--green-light);
+    border-bottom: 4px solid var(--text-white);
+  }
+  .app__sidebar-links ul li a {
+    display: none;
+  }
+  .active {
+    border-right: 4px solid var(--green-light) !important;
+    border-bottom: 4px solid var(--text-white) !important;
+  }
+
+  /* .app__add-search-btn .app__add-btn {
+  max-width: 400px;
+  } */
+
+  .app__search svg {
+    top:45%;
+    left: 5%;
+  }
+
+  .app__add-search-btn .app__search-btn {
+    margin-top: 16px;
+  }
+
+  .app__schedule-expand .app__schedule-days .app__schedule-day {
+    margin: 10px 0;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
